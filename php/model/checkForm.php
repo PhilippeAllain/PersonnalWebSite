@@ -15,5 +15,7 @@ catch(Exception $e)
 	// En cas d'erreur, on affiche un message et on arrête tout
         die('Erreur : '.$e->getMessage());
 }
+
+
 $req = $bdd->prepare('INSERT INTO visitors (name, firstName, mail, password, date) VALUES(?, ?, ?, ?, NOW())');
 $req->execute(array($name, $firstName,$mail,$password));

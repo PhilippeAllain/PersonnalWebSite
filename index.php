@@ -11,7 +11,7 @@
 
 	<body>
 
-<?php include ("menuNav.php"); ?>
+<?php include ("php/view/menuNav.php"); ?>
 
 <form method="post" action="php/model/checkForm.php" name="subcribe" class="well" role="form" id="well">
 	<span id="subcribe">Formulaire d'inscription.</span>
@@ -23,7 +23,6 @@
 		<div class="form-group">
 			<label for="name">Votre nom :</label>
 			<input type="text" name="name" id="name"class="form-control champ">
-			<span id="name"></span>
 		</div>
 
 		<div class="form-group">
@@ -32,8 +31,8 @@
 		</div>
 
 		<div class="form-group">
-			<label for="lemail">Votre adresse email :</label>
-			<input type="email" class="form-control champ" id="lemail" name="email">
+			<label for="email">Votre adresse email :</label>
+			<input type="email" class="form-control champ" id="email" name="email">
 		</div>
 
 		<div class="form-group">
@@ -48,8 +47,8 @@
 	</p>
 </form>
 
-
-<?php include("script.php"); ?>
+<script src="js/form.js"></script>
+<?php include("php/view/script.php"); ?>
 
 
 	</body>
