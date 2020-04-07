@@ -9,11 +9,10 @@ $(document).ready(function(){
     });
   });
 
-    var $firstName = $('#firstName'),
-        $name = $('#name'),
-        $pw1 = $('#pw1'),
-        $pw2 = $('#pw2'),
-        $lemail = $('#lemail'),
+    var $name = $('#name'),
+        $firstName = $('#firstName'),
+        $mail = $('#mail'),
+        $password = $('#password'),
         $envoi = $('#envoi'),
         $reset = $('#rafraichir'),
         $error = $('#error'),
@@ -53,11 +52,10 @@ $(document).ready(function(){
         e.preventDefault(); // on annule la fonction par défaut du bouton d'envoi
 
         // puis on lance la fonction de vérification sur tous les champs :
-        verifier($firstName);
         verifier($name);
-        verifier($pw1);
-        verifier($pw2);
-        verifier($lemail);
+        verifier($firstame);
+        verifier($mail);
+        verifier($password);
     });
 
     $reset.click(function(){
