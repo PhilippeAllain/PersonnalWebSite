@@ -49,7 +49,7 @@
 								</li>
 
 								<li class="nav-item">
-									<a class="nav-link" href="php/view/loginForm.php">Login</a>
+									<a class="nav-link" href="loginForm.php">Login</a>
 								</li>
 								</ul>
 							</div>
@@ -57,10 +57,9 @@
 				</div>
 			</div>
 		</div>
-		<script src="assets/js/jquery.js"></script>
-		<script src="assets/js/bootstrap.js"></script>
 
-<form method="post" action="checkForm.php" name="subcribe" class="well" role="form" id="well">
+
+<form method="post" action="registrationCheck.php" name="subcribe" class="well" role="form" id="well">
 	<span id="subcribe">Formulaire d'inscription.</span>
 	<div id="error">
 			<p id="subcribe">Vous n'avez pas rempli correctement les champs du formulaire !</p>
@@ -68,18 +67,13 @@
 	<p>
 
 		<div class="form-group">
-			<label for="name">Votre nom :</label>
+			<label for="name">Votre Pseudo :</label>
 			<input type="text" name="name" id="name"class="form-control champ">
 		</div>
 
 		<div class="form-group">
-			<label for="firstName">Votre prénom :</label>
-			<input type="text" name="firstName" id="firstName" class="form-control champ" />
-		</div>
-
-		<div class="form-group">
-			<label for="email">Votre adresse email :</label>
-			<input type="email" class="form-control champ" id="email" name="mail">
+			<label for="mail">Votre adresse email :</label>
+			<input type="email" class="form-control champ" id="mail" name="mail">
 		</div>
 
 		<div class="form-group">
@@ -93,6 +87,9 @@
 	</div>
 	</p>
 </form>
+
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/bootstrap.js"></script>
 
 <script src="js/form.js"></script>
 

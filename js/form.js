@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+  $('a:not(:last)').attr('href', '#');
+  $('form').hide().show('2000', 'linear');
+
   $(function() {
     $('#philippe').mouseover(function() {
       $(this).attr('src','img/moi_medium.jpg');
@@ -10,7 +13,6 @@ $(document).ready(function(){
   });
 
     var $name = $('#name'),
-        $firstName = $('#firstName'),
         $mail = $('#mail'),
         $password = $('#password'),
         $envoi = $('#envoi'),
@@ -33,27 +35,11 @@ $(document).ready(function(){
          }
     });
 
-    $pw2.keyup(function(){
-        if($(this).val() != $pw1.val()){ // si la confirmation est différente du mot de passe
-            $(this).css({ // on rend le champ rouge
-     	        borderColor : 'red',
-        	color : 'red'
-            });
-        }
-        else{
-	    $(this).css({ // si tout est bon, on le rend vert
-	        borderColor : 'green',
-	        color : 'green'
-	    });
-        }
-    });
-
     $envoi.click(function(e){
-        e.preventDefault(); // on annule la fonction par défaut du bouton d'envoi
+      //e.preventDefault(); // on annule la fonction par défaut du bouton d'envoi
 
         // puis on lance la fonction de vérification sur tous les champs :
         verifier($name);
-        verifier($firstame);
         verifier($mail);
         verifier($password);
     });
