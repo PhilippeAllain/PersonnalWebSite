@@ -1,3 +1,7 @@
+<?php
+require('viewNavBar.php');
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -10,20 +14,34 @@
 
 	<body>
 
-<form method="post" action="loginCheck.php">
+<form method="post" action="loginCheck.php" name="subcribe" class="well" role="form" id="well">
+	<div id="error">
+			<p id="subcribe">Vous n'avez pas rempli correctement les champs du formulaire !</p>
+	</div>
 		<span id="subcribe">Connection.</span>
 	<p>
-		<label for="name">Votre Pseudo :</label>
-		<input type="text" name="name" />
+		<div class="form-group">
+			<label for="name">Votre Pseudo :</label>
+			<input type="text" name="name" id="name"class="form-control champ">
+		</div>
 
-		<label for="name">Votre mot de passe :</label>
-		<input type="password" name="password" />
-		<input type="submit" value="Valider" />
+		<div class="form-group">
+			<label for="password">Votre mot de passe :</label>
+			<input type="password" class="form-control champ" id="password" name="password">
+		</div>
+
+		<div class="form-group">
+		<input type="submit" id="envoi" value="Envoyer" />
+		<input type="reset" id="rafraichir" value="Rafraîchir" />
+	</div>
+
 	</p>
 </form>
 
 <script src="assets/js/jquery.js"></script>
 <script src="assets/js/bootstrap.js"></script>
+
+<script src="js/loginForm.js"></script>
 
 	</body>
 </html>
