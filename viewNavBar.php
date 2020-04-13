@@ -37,6 +37,14 @@
 									<a class="nav-link" href="https://www.facebook.com/">Facebook</a>
 								</li>
 
+								<li class="nav-item">
+									<a class="nav-link" href="chat/minichat.php">Chat</a>
+								</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="Blog/index.php">Blog</a>
+								</li>
+
 								<li class="nav-item dropdown">
 									<a class="nav-link dropdown-toggle" href="#" id="menuderoulant" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										Mes actualités
@@ -49,7 +57,7 @@
 								</li>
 
 								<li class="nav-item">
-									<a class="nav-link" id="login" href="loginForm.php">Login</a>
+									<a class="nav-link" id="login" href="loginForm.php">Connection</a>
 								</li>
 								</ul>
 							</div>
