@@ -14,13 +14,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+					<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuprincipal" aria-controls="menuprincipal" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
 
-						<a class="navbar-brand"><img src="img/moi_petit.jpg" id="philippe" alt="Philippe"></a>
+						<a class="navbar-brand" href="#"><img src="img/moi_petit.jpg" id="philippe" alt="Philippe"></a>
 
 						<div class="collapse navbar-collapse" id="menuprincipal">
 							<ul class="navbar-nav mr-auto">
@@ -60,6 +60,11 @@
 									<a class="nav-link" id="login" href="loginForm.php">Connection</a>
 								</li>
 								</ul>
+
+								<form class="form-inline my-2 my-lg-0">
+									<input class="form-control mr-sm-2" type="search" placeholder="Rechercher" aria-label="Rechercher">
+									<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rechercher</button>
+								</form>
 							</div>
 					</nav>
 				</div>

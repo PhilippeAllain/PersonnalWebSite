@@ -21,8 +21,8 @@ require('viewNavBar.php');
 		<span id="subcribe">Connection.</span>
 	<p>
 		<div class="form-group">
-			<label for="name">Votre Pseudo :</label>
-			<input type="text" name="name" id="name"class="form-control champ">
+			<label for="name">Votre pseudo :</label>
+			<input type="text" name="name" id="name" class="form-control champ">
 		</div>
 
 		<div class="form-group">
@@ -30,10 +30,15 @@ require('viewNavBar.php');
 			<input type="password" class="form-control champ" id="password" name="password">
 		</div>
 
+		<div class="form-check">
+			<input type="checkbox" class="form-check-input" id="remember">
+			<label class="form-check-label" for="remember">Se souvenir de moi</label>
+		</div>
+
 		<div class="form-group">
-		<input type="submit" id="envoi" value="Envoyer" />
-		<input type="reset" id="rafraichir" value="Rafraîchir" />
-	</div>
+			<button type="submit" class="btn btn-primary" id="envoi">Envoyer</button>
+			<button type="reset" class="btn btn-primary" id="rafraichir">Rafraichir</button>
+		</div>
 
 	</p>
 </form>

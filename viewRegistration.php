@@ -1,4 +1,3 @@
-
 <form method="post" action="registrationCheck.php" name="subcribe" class="well" role="form" id="well">
 	<span id="subcribe">Formulaire d'inscription.</span>
 	<div id="error">
@@ -12,8 +11,8 @@
 		</div>
 
 		<div class="form-group">
-			<label for="mail">Votre adresse email :</label>
-			<input type="email" class="form-control champ" id="mail" name="mail">
+			<label for="email">Votre adresse email :</label>
+			<input type="email" class="form-control champ" id="email" name="email">
 		</div>
 
 		<div class="form-group">
@@ -22,8 +21,8 @@
 		</div>
 
 		<div class="form-group">
-		<input type="submit" id="envoi" value="Envoyer" />
-		<input type="reset" id="rafraichir" value="Rafraîchir" />
+		<button type="submit" class="btn btn-primary" id="envoi">Envoyer</button>
+		<button type="reset" class="btn btn-primary" id="rafraichir">Rafraichir</button>
 	</div>
 	</p>
 </form>
