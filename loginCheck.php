@@ -32,8 +32,6 @@ else
         $_SESSION['id'] = $resultat['id'];
         $_SESSION['name'] = $name;
 
-				echo $_SESSION['id'];
-				echo $_SESSION['name'];
 				header('Location:home.php');
 
     }
