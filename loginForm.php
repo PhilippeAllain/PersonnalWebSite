@@ -22,12 +22,12 @@ require('viewNavBar.php');
 	<p>
 		<div class="form-group">
 			<label for="name">Votre Pseudo :</label>
-			<input type="text" name="name" id="name"class="form-control champ">
+			<input type="text" name="name" id="name"class="form-control champ" minlength="3" required>
 		</div>
 
 		<div class="form-group">
 			<label for="password">Votre mot de passe :</label>
-			<input type="password" class="form-control champ" id="password" name="password">
+			<input type="password" class="form-control champ" id="password" name="password" minlength="3" required>
 		</div>
 
 		<div class="form-group">

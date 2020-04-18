@@ -6,31 +6,16 @@ body{
   border: 2px black solid;
 }
 
-span[id="subcribe"] {
-  font-family: Impact,Arial, Verdana, Tahoma, sans-serif;
-  font-style: italic;
-  font-size: 30px;
-  color: blue;
-}
-p[id="subcribe"] {
-  color: red;
-  text-decoration: underline;
-}
-#well {
+#cardForm{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 3%;
+  margin-left: 25%;
+  margin-right: 25%;
   margin-bottom: auto;
   border-radius: 30px/20px;
   border: 5px blue ridge;
-  padding: 20px;
-  margin-left: 30%;
-  margin-right: 30%;
   background-color: #DBEDFC;
-}
-
-#error {
-  display: none;
 }

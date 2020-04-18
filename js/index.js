@@ -35,8 +35,10 @@ $(document).ready(function(){
          }
     });
 
+
+
     $envoi.click(function(e){
-      //e.preventDefault(); // on annule la fonction par défaut du bouton d'envoi
+      e.preventDefault(); // on annule la fonction par défaut du bouton d'envoi
 
         // puis on lance la fonction de vérification sur tous les champs :
         verifier($name);
