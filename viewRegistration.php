@@ -39,7 +39,7 @@
 					<input type="password" class="form-control champ" id="password" name="password" placeholder="Mot de passe" />
 				</div>
 			</div>
-
+<!--
 			<div class="form-group row">
 				<label class="col-sm-4 col-form-label" for="confirm_password">Confirmer Mot de passe</label>
 				<div class="col-sm-6">
@@ -55,6 +55,7 @@
 					</div>
 				</div>
 			</div>
+-->
 
 			<div class="form-group row">
 				<div class="col-sm-9 offset-sm-4">

@@ -1,7 +1,12 @@
-$(document).ready(function(){
+$.validator.setDefaults( {
+  submitHandler: function () {
+
+  }
+} );
+
+$( document ).ready( function () {
 
   $('a:not(:last)').attr('href', '#');
-//  $('form').hide().show('2000', 'linear');
 
   $(function() {
     $('#philippe').mouseover(function() {
@@ -12,56 +17,64 @@ $(document).ready(function(){
     });
   });
 
-    var $name = $('#name'),
-        $mail = $('#mail'),
-        $password = $('#password'),
-        $envoi = $('#envoi'),
-        $reset = $('#rafraichir'),
-        $error = $('#error'),
-        $champ = $('.champ');
+  $( "#signupForm" ).validate( {
+    rules: {
+      firstname: "required",
+      lastname: "required",
+      username: {
+        required: true,
+        minlength: 2
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      password: {
+        required: true,
+        minlength: 5
+      },
+    },
 
-    $champ.keyup(function(){
-        if($(this).val().length < 3){ // si la chaîne de caractères est inférieure à 3
-            $(this).css({ // on rend le champ rouge
-                borderColor : 'red',
-	        color : 'red'
-            });
-         }
-         else{
-             $(this).css({ // si tout est bon, on le rend vert
-	         borderColor : 'green',
-	         color : 'green'
-	     });
-         }
-    });
+    messages: {
+      firstname: "Entrer votre prénom",
+      lastname: "Entrer votre nom",
+      username: {
+        required: "Entrer votre pseudo",
+        minlength: "Votre pseudo doit avoir 2 caractères au minimum"
+      },
+      password: {
+        required: "Entrer votre mot de passe",
+        minlength: "Votre nom de passe doit être au minimum de 5 caractères"
+      },
 
+      email: "Entrer une adresse email valide",
+    },
 
+    errorElement: "em",
+    errorPlacement: function ( error, element ) {
+      // Add the `invalid-feedback` class to the error element
+      error.addClass( "invalid-feedback" );
 
-    $envoi.click(function(e){
-      e.preventDefault(); // on annule la fonction par défaut du bouton d'envoi
-
-        // puis on lance la fonction de vérification sur tous les champs :
-        verifier($name);
-        verifier($mail);
-        verifier($password);
-    });
-
-    $reset.click(function(){
-        $champ.css({ // on remet le style des champs comme on l'avait défini dans le style CSS
-            borderColor : '#ccc',
-    	    color : '#555'
-        });
-        $error.css('display', 'none'); // on prend soin de cacher le message d'erreur
-    });
-
-    function verifier(champ){
-        if(champ.val() == ""){ // si le champ est vide
-    	    $error.css('display', 'block'); // on affiche le message d'erreur
-            champ.css({ // on rend le champ rouge
-    	        borderColor : 'red',
-    	        color : 'red'
-    	    });
-        }
+      if ( element.prop( "type" ) === "checkbox" ) {
+        error.insertAfter( element.next( "label" ) );
+      } else {
+        error.insertAfter( element );
+      }
+    },
+    highlight: function ( element, errorClass, validClass ) {
+      $( element ).addClass( "is-invalid" ).removeClass( "is-valid" );
+    },
+    unhighlight: function (element, errorClass, validClass) {
+      $( element ).addClass( "is-valid" ).removeClass( "is-invalid" );
     }
+  } );
 
+  $reset.click(function(){
+    $champ.css({ // on remet le style des champs comme on l'avait défini dans le style CSS
+        borderColor : '#ccc',
+      color : '#555'
+    });
+    $error.css('display', 'none'); // on prend soin de cacher le message d'erreur
 });
+
+} );
