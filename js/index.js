@@ -1,7 +1,19 @@
-$(document).ready(function(){
+$( document ).ready( function () {
+
+  $("#signupForm").validate();
+    jQuery.extend(jQuery.validator.messages, {
+  required: "Entrer un nom ou un pseudo.",
+  remote: "votre message",
+  mail: "Entrer un mail valide.",
+  maxlength: jQuery.validator.format("votre message {0} caractéres."),
+  minlength: jQuery.validator.format("votre message {0} caractéres."),
+  rangelength: jQuery.validator.format("votre message  entre {0} et {1} caractéres."),
+  range: jQuery.validator.format("votre message  entre {0} et {1}."),
+  max: jQuery.validator.format("votre message  inférieur ou égal à {0}."),
+  min: jQuery.validator.format("votre message  supérieur ou égal à {0}.")
+  });
 
   $('a:not(:last)').attr('href', '#');
-//  $('form').hide().show('2000', 'linear');
 
   $(function() {
     $('#philippe').mouseover(function() {
@@ -12,54 +24,15 @@ $(document).ready(function(){
     });
   });
 
-    var $name = $('#name'),
-        $mail = $('#mail'),
-        $password = $('#password'),
-        $envoi = $('#envoi'),
-        $reset = $('#rafraichir'),
-        $error = $('#error'),
-        $champ = $('.champ');
 
-    $champ.keyup(function(){
-        if($(this).val().length < 3){ // si la chaîne de caractères est inférieure à 3
-            $(this).css({ // on rend le champ rouge
-                borderColor : 'red',
-	        color : 'red'
-            });
-         }
-         else{
-             $(this).css({ // si tout est bon, on le rend vert
-	         borderColor : 'green',
-	         color : 'green'
-	     });
-         }
+  $reset.click(function(){
+    $champ.css({ // on remet le style des champs comme on l'avait défini dans le style CSS
+        borderColor : '#ccc',
+      color : '#555'
     });
+    $error.css('display', 'none'); // on prend soin de cacher le message d'erreur
+});
 
-    $envoi.click(function(e){
-      //e.preventDefault(); // on annule la fonction par défaut du bouton d'envoi
 
-        // puis on lance la fonction de vérification sur tous les champs :
-        verifier($name);
-        verifier($mail);
-        verifier($password);
-    });
-
-    $reset.click(function(){
-        $champ.css({ // on remet le style des champs comme on l'avait défini dans le style CSS
-            borderColor : '#ccc',
-    	    color : '#555'
-        });
-        $error.css('display', 'none'); // on prend soin de cacher le message d'erreur
-    });
-
-    function verifier(champ){
-        if(champ.val() == ""){ // si le champ est vide
-    	    $error.css('display', 'block'); // on affiche le message d'erreur
-            champ.css({ // on rend le champ rouge
-    	        borderColor : 'red',
-    	        color : 'red'
-    	    });
-        }
-    }
 
 });

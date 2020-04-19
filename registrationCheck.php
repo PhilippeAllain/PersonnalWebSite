@@ -1,8 +1,10 @@
 <?php
 
 if (isset($_POST['name']) AND $_POST['name'] !=""
+  AND isset($_POST['mail']) AND $_POST['mail'] !=""
   AND isset($_POST['password']) AND $_POST['password'] !=""
-  AND isset($_POST['mail']) AND $_POST['mail'] !="")
+
+  )
     {
       $_POST['name'] = htmlspecialchars($_POST['name']);
       $_POST['password'] = htmlspecialchars($_POST['password']);
