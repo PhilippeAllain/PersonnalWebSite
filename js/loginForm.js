@@ -11,5 +11,7 @@ $(document).ready(function(){
       $(this).attr('src','img/moi_petit.jpg');
     });
   });
-  
+
+  $('#name').focus();
+
 });

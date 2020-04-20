@@ -1,5 +1,7 @@
 $( document ).ready( function () {
 
+  $('#name').focus();
+  
   $("#signupForm").validate();
     jQuery.extend(jQuery.validator.messages, {
   required: "Entrer un nom ou un pseudo.",
