@@ -12,6 +12,13 @@ $(document).ready(function(){
     });
   });
 
+  $("#subcribe").validate();
+  $.extend( $.validator.messages, {
+	required: "Ce champ est obligatoire."
+} );
   $('#name').focus();
-
+  $('input').focus( function() {
+    leFocus = $(this).attr('placeholder');
+    $('#status').text('La zone '+ leFocus + ' est a remplir.').css('color', 'red');
+  });
 });

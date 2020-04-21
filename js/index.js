@@ -1,18 +1,11 @@
 $( document ).ready( function () {
 
   $('#name').focus();
-  
+
   $("#signupForm").validate();
-    jQuery.extend(jQuery.validator.messages, {
-  required: "Entrer un nom ou un pseudo.",
-  remote: "votre message",
-  mail: "Entrer un mail valide.",
-  maxlength: jQuery.validator.format("votre message {0} caractéres."),
-  minlength: jQuery.validator.format("votre message {0} caractéres."),
-  rangelength: jQuery.validator.format("votre message  entre {0} et {1} caractéres."),
-  range: jQuery.validator.format("votre message  entre {0} et {1}."),
-  max: jQuery.validator.format("votre message  inférieur ou égal à {0}."),
-  min: jQuery.validator.format("votre message  supérieur ou égal à {0}.")
+  $.extend( $.validator.messages, {
+	required: "Ce champ est obligatoire.",
+	email: "Veuillez fournir une adresse électronique valide."
   });
 
   $('a:not(:last)').attr('href', '#');

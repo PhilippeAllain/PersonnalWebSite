@@ -3,8 +3,9 @@
  	<head>
  		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
  		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-     <link href="assets/css/bootstrap.css" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
      <link href="css/form.css" rel="stylesheet" />
+
 
  		<title>Formulaire d'inscription</title>
 
@@ -77,23 +78,24 @@
   		<form id="signupForm" method="post" class="form-horizontal" role="form" action="registrationCheck.php">
 
   			<div class="form-group row">
-  				<label class="col-sm-4 col-form-label" for="name">Votre Prénom</label>
+  				<label class="col-sm-4 col-form-label" for="name">Votre Nom/Pseudo</label>
   				<div class="col-sm-6">
-  					<input type="text" class="form-control champ" id="name" name="name" placeholder="Nom/Pseudo" required />
+  					<input type="text" class="form-control champ required" id="name" name="name" placeholder="Nom/Pseudo" />
   				</div>
   			</div>
 
   			<div class="form-group row">
   				<label class="col-sm-4 col-form-label" for="mail">Votre Email</label>
   				<div class="col-sm-6">
-  					<input type="text" class="form-control champ" id="mail" name="mail" placeholder="Votre Email" />
+  					<input type="text" class="form-control champ required email" id="mail" name="mail" placeholder="Votre Email" />
+            <span class="error" aria-live="polite"></span>
   				</div>
   			</div>
 
   			<div class="form-group row">
   				<label class="col-sm-4 col-form-label" for="password">Mot de passe</label>
   				<div class="col-sm-6">
-  					<input type="password" class="form-control champ" id="password" name="password" placeholder="Mot de passe"/>
+  					<input type="password" class="form-control champ required" id="password" name="password" placeholder="Mot de passe" />
   				</div>
   			</div>
 
@@ -105,11 +107,13 @@
   			</div>
   					</form>
   	</div>
+    <span id="status"></span><br /><br />
   </div>
 
-  <script src="assets/js/jquery.js"></script>
-	<script src="assets/js/bootstrap.js"></script>
-	<script src="assets/js/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
 	<script src="js/index.js"></script>
 
 </body>
