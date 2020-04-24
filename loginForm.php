@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link href="css/loginForm.css" rel="stylesheet" />
 		<title>Connection</title>
 	</head>
@@ -70,10 +70,9 @@
 <div class="card" id="cardForm">
 	<div class="card-header">
 	<h1 class="card-text">Connection</h1>
-
-<form method="post" action="loginCheck.php" name="subcribe" id="subcribe" class="form-horizontal" role="form">
-	<div id="error">
-			<p id="subcribe">Vous n'avez pas rempli correctement les champs du formulaire !</p>
+</div>
+  	<div class="card-body">
+	<form method="post" action="loginCheck.php" name="subcribe" id="subcribe" class="form-horizontal" role="form">
 	</div>
 
 		<div class="form-group row">
@@ -91,15 +90,15 @@
 		</div>
 
 		<div class="form-group row">
-			<div class="col-sm-9 offset-sm-4">
+			<div class="col">
 				<button type="submit" class="btn btn-primary" name="signup" value="signup">Validez</button>
-				<button type="reset" class="btn btn-primary" value="rafraichir">Rafraîchir</button>
+				<button type="reset" id="reset" class="btn btn-primary" value="rafraichir">Rafraîchir</button>
 			</div>
 		</div>
 		</form>
+	</div>
 </div>
-    <span id="status"></span><br /><br />
-</div>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

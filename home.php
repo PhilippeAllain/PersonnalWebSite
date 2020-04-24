@@ -3,7 +3,7 @@ session_start();
 
 if (isset($_SESSION['id']) AND isset($_SESSION['name']))
 {
-    echo 'Bonjour ' . $_SESSION['name'];
+    echo '<h3><font color="red">Bonjour ' . $_SESSION['name'].'</font></h3>';
 }
 ?>
 
@@ -12,8 +12,7 @@ if (isset($_SESSION['id']) AND isset($_SESSION['name']))
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="css/form.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">    <link href="css/form.css" rel="stylesheet" />
 
 		<title>Accueil</title>
 

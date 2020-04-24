@@ -1,14 +1,9 @@
-$( document ).ready( function () {
-
-  $('#name').focus();
-
-  $("#signupForm").validate();
-  $.extend( $.validator.messages, {
-	required: "Ce champ est obligatoire.",
-	email: "Veuillez fournir une adresse électronique valide."
-  });
+$(document).ready(function(){
 
   $('a:not(:last)').attr('href', '#');
+  $('form').hide().show('2000', 'linear');
+
+  $('#name').focus();
 
   $(function() {
     $('#philippe').mouseover(function() {
@@ -19,15 +14,5 @@ $( document ).ready( function () {
     });
   });
 
-
-  $reset.click(function(){
-    $champ.css({ // on remet le style des champs comme on l'avait défini dans le style CSS
-        borderColor : '#ccc',
-      color : '#555'
-    });
-    $error.css('display', 'none'); // on prend soin de cacher le message d'erreur
-});
-
-
-
+  $("#signupForm").validate();
 });

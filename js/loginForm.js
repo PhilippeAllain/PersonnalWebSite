@@ -3,6 +3,8 @@ $(document).ready(function(){
   $('a:not(:last)').attr('href', '#');
   $('form').hide().show('2000', 'linear');
 
+  $('#name').focus();
+
   $(function() {
     $('#philippe').mouseover(function() {
       $(this).attr('src','img/moi_medium.jpg');
@@ -13,12 +15,4 @@ $(document).ready(function(){
   });
 
   $("#subcribe").validate();
-  $.extend( $.validator.messages, {
-	required: "Ce champ est obligatoire."
-} );
-  $('#name').focus();
-  $('input').focus( function() {
-    leFocus = $(this).attr('placeholder');
-    $('#status').text('La zone '+ leFocus + ' est a remplir.').css('color', 'red');
-  });
 });
