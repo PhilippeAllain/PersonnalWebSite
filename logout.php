@@ -1,9 +1,9 @@
 <?php
-session_start();
 
 // Suppression des variables de session et de la session
-$_SESSION = array();
 session_destroy();
+unset($_SESSION);
+$_SESSION[] = array();
 
 // Suppression des cookies de connexion automatique
 setcookie('login', '');

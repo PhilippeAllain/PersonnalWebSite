@@ -70,6 +70,7 @@
  		</div>
   </div>
 
+<!-- Le formulaire-->
 
   <div class="card" id="cardForm">
   	<div class="card-header">

@@ -5,6 +5,7 @@ if (isset($_SESSION['id']) AND isset($_SESSION['name']))
 {
     echo '<h3><font color="red">Bonjour ' . $_SESSION['name'].'</font></h3>';
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -75,6 +76,9 @@ if (isset($_SESSION['id']) AND isset($_SESSION['name']))
 			</div>
 		</div>
 
+    <p><font color="red"><?php echo 'nom de la session : ', session_name(), '<br>'; ?></font></p>
+    <p><font color="red"><?php echo 'identifiant utilisé : ', session_id(), '<br>'; ?></font></p>
+    <p><font color="red"><?php echo session_save_path(); ?></font></p>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
