@@ -15,4 +15,8 @@ $(document).ready(function(){
   });
 
   $("#signupForm").validate();
+
+  $('#raz').click(function(){
+    location.reload();
+  });
 });
