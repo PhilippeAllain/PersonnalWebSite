@@ -6,7 +6,7 @@ require_once('model/CommentManager.php');
 function listPosts()
 {
     $postManager = new OC\Blog\Model\PostManager();
-    $posts = $postManager->getPosts(); 
+    $posts = $postManager->getPosts();
 
     require('view/frontend/listPostsView.php');
 }

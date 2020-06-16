@@ -7,12 +7,16 @@ $(document).ready(function(){
 
   $(function() {
     $('#philippe').mouseover(function() {
-      $(this).attr('src','img/moi_medium.jpg');
+      $(this).attr('src','../img/moi_medium.jpg');
     });
     $('#philippe').mouseout(function() {
-      $(this).attr('src','img/moi_petit.jpg');
+      $(this).attr('src','../img/moi_petit.jpg');
     });
   });
 
   $("#subcribe").validate();
+
+  $('#raz').click(function(){
+    location.reload();
+  });
 });

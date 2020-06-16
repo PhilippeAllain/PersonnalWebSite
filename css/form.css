@@ -19,3 +19,73 @@ body{
   border: 5px blue ridge;
   background-color: #DBEDFC;
 }
+
+.card-text {
+  font-family: 'Lobster', cursive;
+  color: red;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 100px;
+  left: 800px;
+  margin-top: 80px;
+  font-size: 1.5em;
+}
+
+footer a {
+  font-weight: bold;
+  font-size: 1,5em;
+  text-decoration: underline;
+  color: yellowgreen;
+}
+
+#videoa {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  width: auto;
+  height: 240px;
+  top: 200px;
+  right: 50px;
+  box-shadow: 6px 6px 4px ghostwhite;
+}
+
+#videob {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  width: auto;
+  height: 240px;
+  top: 200px;
+  right: 550px;
+  box-shadow: 6px 6px 4px ghostwhite;
+}
+
+  #videoc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    width: auto;
+    height: 240px;
+    top: 200px;
+    right: 1050px;
+    box-shadow: 6px 6px 4px ghostwhite;
+  }
+
+  #videod {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    width: auto;
+    height: 240px;
+    top: 200px;
+    right: 1550px;
+    box-shadow: 6px 6px 4px ghostwhite;
+  }
