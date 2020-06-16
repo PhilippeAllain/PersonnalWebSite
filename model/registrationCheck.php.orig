@@ -27,15 +27,20 @@ if (isset($_POST['name']) AND $_POST['name'] !=""
             header('Location: ../index.php');
           }
         }
-
+<<<<<<< HEAD:registrationCheck.php
 
 else
 {
   echo "Il faut renseigner un pseudo, un mot de passe et une adresse mail !";
   header('Location: index.php');
 };
-
-
+||||||| 32aebd0:registrationCheck.php
+        else
+        {
+          echo "Il faut renseigner un pseudo, un mot de passe et une adresse mail !";
+          header('Location: index.php');
+        }
+=======
       }
 
 function dbConnect() {
@@ -63,3 +68,4 @@ function verification($name, $mail){
     header('Location: ../index.php');
   }
 }
+>>>>>>> mvc1:model/registrationCheck.php
