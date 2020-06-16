@@ -11,5 +11,11 @@
 
     <body>
         <?= $content ?>
+        <hr>
+
+        <footer class="container">
+          <p>&copy; Philippe Frager</p>
+          <p><a href="mailto:philippe.frager@wanadoo.fr">Envoyez-moi un e-mail</a></p>
+        </footer>
     </body>
 </html>

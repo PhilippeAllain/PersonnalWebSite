@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 if (!isset($_SESSION['name']))
 {
   //La variable de session n'existe pas,
@@ -10,13 +9,12 @@ if (!isset($_SESSION['name']))
   //On arrête l'exécution
   exit();
 }
-  echo '<h3><font color="red">Bonjour ' . $_SESSION['name'].'</font></h3>';
-?>
 
-<?php $title = 'Accueil'; ?>
-<?php $css ='href="../css/form.css" rel="stylesheet"'; ?>
+ $title = 'Accueil';
+ $css ='href="../css/form.css" rel="stylesheet"';
+ ?>
 
-<?php ob_start(); ?>
+
 
 		<div class="container">
 			<div class="row">
@@ -58,7 +56,7 @@ if (!isset($_SESSION['name']))
 									</a>
 								<div class="dropdown-menu" aria-labelledby="menuderoulant">
 									<a class="dropdown-item" href="#">Livres</a>
-									<a class="dropdown-item" href="#">Films</a>
+									<a class="dropdown-item" href="../view/movies.php">Films</a>
 									<a class="dropdown-item" href="#">Jeux</a>
 								</div>
 								</li>
@@ -72,16 +70,6 @@ if (!isset($_SESSION['name']))
 				</div>
 			</div>
 		</div>
-
-    <p><font color="red"><?php echo 'nom de la session : ', session_name(), '<br>'; ?></font></p>
-    <p><font color="red"><?php echo 'identifiant utilisé : ', session_id(), '<br>'; ?></font></p>
-    <p><font color="red"><?php echo session_save_path(); ?></font></p>
-
-    <video controls="controls" autoplay="autoplay" width="300">
-        <source src="../media/videos/bienvenue.webm" />
-        <source src="../media/videos/bienvenue.mp4" />
-        <source src="../media/videos/bienvenue.ogg" />
-    </video>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

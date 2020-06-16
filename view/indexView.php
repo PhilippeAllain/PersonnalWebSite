@@ -17,33 +17,33 @@
           <ul class="navbar-nav mr-auto">
 
             <li class="nav-item">
-              <a class="nav-link" href="img/CV_2020.pdf">Mon C.V.</a>
+              <a class="nav-link hidden" href="img/CV_2020.pdf">Mon C.V.</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" id="a" href="https://www.linkedin.com/in/philippe-frager-538383108/">Linkedin</a>
+              <a class="nav-link hidden" id="a" href="https://www.linkedin.com/in/philippe-frager-538383108/">Linkedin</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="https://www.facebook.com/">Facebook</a>
+              <a class="nav-link hidden" href="https://www.facebook.com/">Facebook</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="../chat/minichat.php">Chat</a>
+              <a class="nav-link hidden" href="../chat/minichat.php">Chat</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="Blog/index.php">Blog</a>
+              <a class="nav-link hidden" href="Blog/index.php">Blog</a>
             </li>
 
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="menuderoulant" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link dropdown-toggle hidden" href="#" id="menuderoulant" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Mes actualités
               </a>
             <div class="dropdown-menu" aria-labelledby="menuderoulant">
-              <a class="dropdown-item" href="#">Livres</a>
-              <a class="dropdown-item" href="#">Films</a>
-              <a class="dropdown-item" href="#">Jeux</a>
+              <a class="dropdown-item hidden" href="#">Livres</a>
+              <a class="dropdown-item hidden" href="#">Films</a>
+              <a class="dropdown-item hidden" href="#">Jeux</a>
             </div>
             </li>
 
@@ -58,10 +58,13 @@
 </div>
 
 <!-- Le formulaire-->
+<div class="container">
+  <div class="row">
+    <div class="col">
 
 <div class="card" id="cardForm">
 <div class="card-header">
-  <h1 class="card-text">Formulaire d'inscription</h1>
+  <h1 class="card-text">Inscription</h1>
 </div>
 <div class="card-body">
   <form id="signupForm" method="post" class="form-horizontal" role="form" action="model/registrationCheck.php">
@@ -96,12 +99,15 @@
         </form>
 </div>
 </div>
+</div>
+</div>
+</div>
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
-<script src="js/index.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 
 <?php $content = ob_get_clean(); ?>
 
