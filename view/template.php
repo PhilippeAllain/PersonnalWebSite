@@ -13,7 +13,7 @@
 
 <?= $content ?>
 
-<div class="bg-light mt-5">
+<div class="bg-light fixed-bottom">
   <div class="container">
     <div class="row pt-4 pb-3">
       <div class="col">
