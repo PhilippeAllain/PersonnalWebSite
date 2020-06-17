@@ -1,0 +1,13 @@
+body{
+  background-image:url(../img/mars-11012_1920.jpg);
+  background-attachment: fixed;
+}
+#philippe{
+  border: 2px black solid;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-weight: bold;
+  color: red;
+}

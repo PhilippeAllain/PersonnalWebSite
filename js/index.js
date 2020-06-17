@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $('a:not(:last)').attr('href', '#');
+  $('.hidden').attr('href', '#');
   $('form').hide().show('2000', 'linear');
 
   $('#name').focus();
